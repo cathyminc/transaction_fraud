@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <body>
+  
+  <h2>Transaction Fraud Detector</h2>
+  
+  <form method="POST" action="/">
+    Sender_Id:<br>
+    <input type="text" name="Sender_Id" value=CLIENT-1142104>
+    <br><br>
+    Time_step:<br>
+    <input type="text" name="Time_step" value=2019-02-08 16:55:46>
+    <br><br>
+    USD_amount:<br>
+    <input type="float" name="USD_amount" value=449.50>
+     <br><br>
+    Sender_Sector:<br>
+    <input type="text" name="Sender_Sector" value=33759.0>
+     <br><br>
+    Bene_Account:<br>
+    <input type="text" name="Bene_Account" value=ACCOUNT-1142260>
+    <br><br>
+<!-- 
+Transaction_Id:<br>
+    <input type="text" name="Bene_Account" value=PAYMENT-1142303>
+    <br><br>
+    Sender_Account:<br>
+    <input type="text" name="Bene_Account" value=ACCOUNT-1142260>
+    <br><br>
+    Sender_Country:<br>
+    <input type="text" name="Bene_Account" value=CHAD>
+    <br><br>
+    Sender_lob:<br>
+    <input type="text" name="Bene_Account" value=NaN>
+    <br><br>
+    Bene_Id:<br>
+    <input type="text" name="Bene_Account" value=BILL-COMPANY-1142304>
+    <br><br>
+    Bene_Account:<br>
+    <input type="text" name="Bene_Account" value=ACCOUNT-1142260>
+    <br><br>
+    Bene_Country:<br>
+    <input type="text" name="Bene_Account" value=USA>
+    <br><br>
+    Transaction_Type:<br>
+    <input type="text" name="Bene_Account" value=MAKE-PAYMENT>
+    <br><br>
+ -->
+    <input type="submit" value="Submit">
+    <br><br>
+    Fraud Detector:<br>
+  </form>
+
+  {% if pred %}
+  <p>The transaction fraud probability is {{ pred }}</p>
+  {% endif %}
+
+
+  </body>
+</html>
